@@ -18,3 +18,7 @@ darwin:
 		pushd query-2/reducer && go build -o query_2_reducer . && popd && mv query-2/reducer/query_2_reducer release/
 		pushd query-3/mapper && go build -o query_3_mapper . && popd && mv query-3/mapper/query_3_mapper release/
 		pushd query-3/reducer && go build -o query_3_reducer . && popd && mv query-3/reducer/query_3_reducer release/
+
+
+clean:
+		rm -rf release
